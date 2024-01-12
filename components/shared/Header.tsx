@@ -8,7 +8,7 @@ import MobileNav from './MobileNav'
 
 export const Header = () => {
   return (
-    <header className='w-full border-b sticky top-0 bg-[#5ce1e6]'>
+    <header className='w-full border-b sticky top-0 bg-[#5ce1e6] z-50'>
         <div className='wrapper flex items-center justify-between'>
             <Link href='/' className='w-36'>
                 <Image src='/assets/images/logoo.jpeg' width={50} height={38} alt='AmazEvent Logo'/> 

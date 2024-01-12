@@ -9,11 +9,11 @@ export default function Home() {
         <div className='wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0'>
           <div className='flex flex-col justify-center gap-8'>
             <h1 className='h1-bold'>
-              Host, Connect, Celebrate: Your Events, Our Platform!
+            Bringing Dreams to Life, One Event at a Time.
             </h1>
-            <p className='p-regular-20 md:p-regular-24'>Book and learn helpful tips from 3,168+ mentors in world-class companies with our global community</p>
-            <Button size='lg' asChild className='button w-full sm:w-fit'>
-              <Link href='#events'>Explore Now</Link>
+            <p className='p-regular-20 md:p-regular-24'>Where Ideas Blossom and Connections Flourish.</p>
+            <Button size='lg' asChild className='button bg-red-400 hover:bg-red-400 w-full sm:w-fit'>
+              <Link href='#events'>Kickstart Now</Link>
             </Button>
           </div>
           <Image src='/assets/images/hero.jpg' alt='Events on the platform' width={1000} height={1000} className='max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]'/>
