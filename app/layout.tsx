@@ -9,10 +9,10 @@ weight: [ "400", "500", "600", "700" ],
 variable:'--font-poppins', })
 
 export const metadata: Metadata = {
-  title: 'Evently',
+  title: 'AmazEvent',
   description: 'By That9jaboy3',
   icons:{
-    icon:'/assets/images/logo.svg'
+    icon:'/assets/images/logoo.jpeg'
   }
 }
 

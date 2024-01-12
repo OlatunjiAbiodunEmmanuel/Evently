@@ -8,11 +8,12 @@ import MobileNav from './MobileNav'
 
 export const Header = () => {
   return (
-    <header className='w-full border-b'>
+    <header className='w-full border-b sticky top-0 bg-[#5ce1e6]'>
         <div className='wrapper flex items-center justify-between'>
             <Link href='/' className='w-36'>
-                <Image src='/assets/images/logo.svg' width={128} height={38} alt='Evently Logo'/>
+                <Image src='/assets/images/logoo.jpeg' width={50} height={38} alt='AmazEvent Logo'/> 
             </Link>
+            <main className='flex'>
             <SignedIn>
                 <nav className='md:flex-between hidden w-full max-w-xs'>
                 <NavItems />
@@ -29,6 +30,7 @@ export const Header = () => {
               </Button>
             </SignedOut>
             </div>
+            </main>
         </div>
     </header>
   )
