@@ -9,7 +9,7 @@ type CollectionProps = {
     limit:number,
     page:number,
     totalpages?:number,
-    urlParamName?:number,
+    urlParamName?:string,
     collectionType?:'Event_Organized' | 'My_Ticket' | 'All_Events',
 }
 
