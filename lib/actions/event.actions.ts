@@ -29,18 +29,27 @@ const populateEvent = (query: any) => {
 
 // CREATE
 export async function createEvent({ userId, event, path }: CreateEventParams) {
+  let con;
   try {
-    await connectToDatabase()
+    con = await connectToDatabase()
+    
+    
 
     const organizer = await User.findById(userId)
     if (!organizer) throw new Error('Organizer not found')
 
     const newEvent = await Event.create({ ...event, category: event.categoryId, organizer: userId })
     revalidatePath(path)
+    console.log(newEvent);
+    
 
     return JSON.parse(JSON.stringify(newEvent))
   } catch (error) {
     handleError(error)
+    console.log(error, 'create');
+    
+  } finally {
+    console.log(con, 'ytg');
   }
 }
 
@@ -91,6 +100,8 @@ export async function deleteEvent({ eventId, path }: DeleteEventParams) {
     if (deletedEvent) revalidatePath(path)
   } catch (error) {
     handleError(error)
+    console.log(error, 'something');
+    
   }
 }
 

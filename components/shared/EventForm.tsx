@@ -53,7 +53,8 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
 
     if(files.length > 0) {
       const uploadedImages = await startUpload(files)
-
+      console.log(uploadedImages, 'uploaded');
+      
       if(!uploadedImages) {
         return
       }
@@ -68,13 +69,15 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
           userId,
           path: '/profile'
         })
+        console.log(newEvent);
+        
 
         if(newEvent) {
           form.reset();
           router.push(`/events/${newEvent._id}`)
         }
       } catch (error) {
-        console.log(error);
+        console.log(error, 'error from crete');
       }
     }
 
