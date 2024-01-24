@@ -31,7 +31,7 @@ const Search = ({ placeholder = 'Search title...' }: { placeholder?: string }) =
       router.push(newUrl, { scroll: false });
     }, 300)
 
-    return () => clearTimeout(delayDebounceFn); 
+    return () => clearTimeout(delayDebounceFn);
   }, [query, searchParams, router])
 
   return (
