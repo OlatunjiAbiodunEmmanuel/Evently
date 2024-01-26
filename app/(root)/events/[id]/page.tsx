@@ -15,8 +15,8 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
   })
 
   return (
-    <>
-    <section className="flex justify-center bg-primary-50 bg-dotted-pattern bg-contain">
+    <main className='bg-[#f0e4eb] bg-dotted-pattern pb-8'>
+    <section className="flex justify-center bg-contain">
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl">
         <Image 
           src={event.imageUrl}
@@ -80,7 +80,7 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
     </section>
 
     {/* EVENTS with the same category */}
-    <section className="wrapper my-8 flex flex-col gap-8 md:gap-12">
+    <section className="wrapper my8 flex flex-col gap-8 md:gap-12">
       <h2 className="h2-bold">Related Events</h2>
 
       <Collection 
@@ -93,7 +93,7 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
           totalPages={relatedEvents?.totalPages}
         />
     </section>
-    </>
+    </main>
   )
 }
 

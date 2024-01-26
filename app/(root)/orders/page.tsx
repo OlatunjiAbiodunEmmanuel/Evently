@@ -11,8 +11,8 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
   const orders = await getOrdersByEvent({ eventId, searchString: searchText })
 
   return (
-    <>
-      <section className=" bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
+    <main className='bg-[#f0e4eb] bg-dotted-pattern md:py-10'>
+      <section className=" bgprimary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <h3 className="wrapper h3-bold text-center sm:text-left ">Orders</h3>
       </section>
 
@@ -62,7 +62,7 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
           </tbody>
         </table>
       </section>
-    </>
+    </main>
   )
 }
 
