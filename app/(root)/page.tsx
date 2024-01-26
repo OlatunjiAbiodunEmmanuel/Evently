@@ -20,8 +20,8 @@ export default async function Home({ searchParams }: SearchParamProps) {
   });
 
   return (
-    <main className="bg-primary-50 bg-dotted-pattern">
-      <section className="bg[#e32010] bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
+    <main className="bg-primary50 bg-[#f0e4eb] bg-dotted-pattern pb-8">
+      <section className="bg[#e32010] bg-primary50 bg-dotted-pattern bg-contain py-5 md:py-10">
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8">
             <h1 className="h2-bold">
@@ -50,7 +50,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
 
       <section
         id="events"
-        className="wrapper my-8 flex flex-col gap-8 md:gap-12"
+        className="wrapper my8 flex flex-col gap-8 md:gap-12"
       >
         <h2 className="h2-bold">
           Here to <br /> make the world easy to access
