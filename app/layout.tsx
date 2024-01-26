@@ -11,8 +11,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'AmazEvent',
-  description: 'AmazEvent is a platform for event planning.',
+  title: 'Esmaz',
+  description: 'Esmaz is a platform for event planning.',
   icons: {
     icon: '/assets/images/logo.png'
   }
