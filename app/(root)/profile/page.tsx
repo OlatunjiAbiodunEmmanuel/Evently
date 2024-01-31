@@ -22,7 +22,6 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
 
   return (
     < main className='bg-[#f0e4eb] bg-dotted-pattern pb-8'>
-      {/* My Tickets */}
       <section className="bgprimary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <div className="wrapper flex items-center justify-center sm:justify-between">
           <h3 className='h3-bold text-center sm:text-left'>My Tickets</h3>
@@ -47,7 +46,6 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
         />
       </section>
 
-      {/* Events Organized */}
       <section className="bgprimary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <div className="wrapper flex items-center justify-center sm:justify-between">
           <h3 className='h3-bold text-center sm:text-left'>Events Organized</h3>
